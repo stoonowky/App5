@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="App5.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App5"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Pivot>
+        <PivotItem Header="Karnety">
+            <Pivot>
+                <PivotItem Header="Sprzedaj karnet">
+
+                    <Grid>
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock>Nazwisko:</TextBlock>
+                            <TextBox Name="nazwisko"></TextBox>
+                        </StackPanel>
+                        <Button Click="Wyszukaj_klienta">Wyszukaj</Button>
+                    </Grid>
+                </PivotItem>
+                <PivotItem Header="Dodaj karnet">
+                    <StackPanel Name="karnety">
+                        <ListBox Name="karnety_lista">
+                            <ListBoxItem>Miesięczny</ListBoxItem>
+                            <ListBoxItem>3-miesięczny</ListBoxItem>
+                            <ListBoxItem>Roczny</ListBoxItem>
+                        </ListBox>
+                        <StackPanel Orientation="Vertical">
+                                <TextBlock>Nazwa karnetu:</TextBlock>
+                                <TextBox Name="nazwa_karnetu"></TextBox>
+                                <TextBlock>Cena:</TextBlock>
+                                <TextBox Name="cena_karnetu"></TextBox>
+                            </StackPanel>
+                        <Button Click="Dodaj_karnet">Dodaj</Button>
+                    </StackPanel>
+                </PivotItem>
+            </Pivot>
+        </PivotItem>
+    </Pivot>
+</Page>
