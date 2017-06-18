@@ -12,7 +12,7 @@
             <Pivot>
                 <PivotItem Header="Sprzedaj karnet">
 
-                    <Grid>
+                    <Grid Name="sprzedaz_karnetu">
                         <StackPanel Orientation="Vertical">
                             <TextBlock>Nazwisko:</TextBlock>
                             <TextBox Name="nazwisko"></TextBox>
@@ -35,6 +35,20 @@
                             </StackPanel>
                         <Button Click="Dodaj_karnet">Dodaj</Button>
                     </StackPanel>
+                </PivotItem>
+            </Pivot>
+        </PivotItem>
+        <PivotItem Header="Klienci">
+            <Pivot>
+                <PivotItem Header="Lista klientow">
+                    <ListBox Name="lista_klientow">
+                        <ListBoxItem>Franciszek Krul</ListBoxItem>
+                        <ListBoxItem>Tomasz Wieczorek</ListBoxItem>
+                        <ListBoxItem>Michał Wiśniewski</ListBoxItem>
+                        <ListBoxItem>Enrique Iglesias</ListBoxItem>
+                        <ListBoxItem>Ryszard Rynkowski</ListBoxItem>
+                        <ListBoxItem>Piotr Rubik</ListBoxItem>
+                    </ListBox>
                 </PivotItem>
             </Pivot>
         </PivotItem>

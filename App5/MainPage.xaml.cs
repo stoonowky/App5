@@ -29,7 +29,8 @@ namespace App5
 
         private void Wyszukaj_klienta(object sender, RoutedEventArgs e)
         {
-
+            sprzedaz_karnetu.Children.Clear();
+            sprzedaz_karnetu.Children.Add(new ListBox());
         }
 
         private void Dodaj_karnet(object sender, RoutedEventArgs e)
